@@ -1,0 +1,76 @@
+Sprint 1:
+----------------------------> User Store 1 <--------------------------------
+1 -> Acesso informando username e key. 	 		 | OK
+2 -> Acesso ao banco de usuários.  		 		 | OK
+3 -> Integração com o banco de usuários.  		 | OK
+
+--> Requisito 1 - testes:
+1 -> erroLoginSemUsername();
+2 -> erroLoginSemKey();
+3 -> loginSimples();
+
+--> Requisito 2 - testes:
+1 -> retornaUsernameInválido();
+2 -> returnaUmaKey();
+3 -> retornaUmaKeyAPartirDoUsername();
+
+--> Requisito 3 - testes:
+1 -> acessoPermitidoIntegradoAoBanco();
+2 -> acessoNegadoIntegradoAoBancoSenhaErrada();
+3 -> acessoNegadoIntegradoAoBancoUserNameErrado();
+
+----------------------------> User Store 2 <--------------------------------
+1 -> Visualização da lista de livros com integração ao banco de livros	  | OK
+
+--> Requisito 1 - testes:
+1 -> retornaUmaListaDosLivros();
+2 -> naoExisteLivros();
+
+----------------------------> User Store 3 <--------------------------------
+1 -> Visualização das info de um livro integração ao banco de livros	  | OK
+
+--> Requisito 1 - testes:
+1 -> retornaUmLivroExpecifico();
+
+----------------------------> User Store 4 <--------------------------------
+1 -> Adicionar o Livro Lido no banco de leitura							  | OK 
+2 -> Adicionar o livro lido que nao esta no banco						  | OK
+
+--> Requisito 1 - testes:
+1 -> adicionarInformacoesDoLivro();
+2 -> adicionarNomeDoLeitor();
+
+--> Requisito 2 - testes:
+1 -> adiconaLivroQueNaoEstaNoBanco();
+
+----------------------------> User Store 5.2 <--------------------------------
+1 -> Seleciona todos os pontos registrados pelo leitor					  | OK
+2 -> Filtrar os dados coletados e calcular a pontuacao					  | OK
+
+--> Requisito 1 - testes:
+1 -> selecionandoApenasUmDado();
+2 -> selecionandoMaisDeUmDado();
+3 -> selecionandoDadoDeUmUsuarioEspecifico();
+3 -> selecionandoDadoDeUmUsuarioInexistente();
+
+--> Requisito 2 - testes:
+1 -> selecionandoONumeroDePaginas();
+2 -> calculandoPontosPorNumeroDePaginas();
+3 -> calculandoPontosTotal();
+
+----------------------------> User Store 5.3 <--------------------------------
+1 -> Verifica se o leitor tem um tipo preferido de livro				  | OK
+
+--> Requisito 1 - testes:
+1 -> listaOsEstilosPreferidos();
+2 -> naoTemEstilosPreferidos();
+
+----------------------------> User Store 6.1 <--------------------------------
+1 -> Listar o nome de todos os leitores que pontuaram     				  | OK
+2 -> Listar a pontuacao de todos os leitores que pontuaram 				  | OK
+
+--> Requisito 1 - testes:
+1 -> listandoONomeDosLeitoresQuePontuaram();
+
+--> Requisito 2 - testes:
+1 -> listandoAPontuacao();
